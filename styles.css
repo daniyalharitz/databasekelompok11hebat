@@ -160,6 +160,10 @@ h1 {
   box-shadow: 0 8px 28px rgb(0 255 65 / 8%);
 }
 
+.member-card-reverse {
+  grid-template-columns: minmax(0, 1fr) 190px;
+}
+
 .member-card-reverse .profile-column {
   order: 2;
 }
@@ -211,9 +215,14 @@ h1 {
 }
 
 .member-details {
+  min-width: 0;
   display: flex;
   flex-direction: column;
   align-self: stretch;
+}
+
+.member-heading > div {
+  min-width: 0;
 }
 
 .field-label {
@@ -316,6 +325,10 @@ h1 {
   .member-card {
     grid-template-columns: 1fr;
     gap: 22px;
+  }
+
+  .member-card-reverse {
+    grid-template-columns: 1fr;
   }
 
   .member-card-reverse .profile-column {
